@@ -1,0 +1,71 @@
+:root {
+  --gold: #d7b053;
+}
+
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: black;
+  /* Stick navbar to top */
+  position: sticky;
+}
+
+.flex-item-left {
+  margin-left: 100px;
+  line-height: 0;
+  position: fixed;
+}
+
+.logo {
+  height: 100px;
+  width: 100px;
+}
+
+.logo2 {
+  height: 100px;
+  width: 200px;
+}
+
+.flex-item-right {
+  margin-left: auto;
+  margin-right: 100px;
+  align-items: center;
+  height: 100px;
+  width: auto;
+  border: none;
+  /* For the buttons to be horizontal */
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-item {
+  height: 100px;
+  width: 150px;
+  cursor: pointer;
+  position: relative;
+  /* button styling */
+  background-color: black;
+  border: black solid;
+  color: var(--gold);
+  font-size: 20px;
+  transition: text-decoration 0.3s ease;
+}
+
+.nav-item::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: var(--gold);
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+}
+
+.nav-item:hover::after {
+  width: 100%;
+}

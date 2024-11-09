@@ -4,13 +4,13 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './css/index.css';
 
 // Routes
-import Test from './pages/Test';
+import Home from './pages/home.js';
 
 function Index() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Test />} />
+        <Route path="/" element={<Home />} />
       </Routes>
     </Router>
   );
