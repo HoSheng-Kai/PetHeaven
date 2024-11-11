@@ -2,9 +2,11 @@ import React from 'react';
 
 import './parallaxpage.css';
 function ParallaxPage(props) {
+
+    let background = require("../../assets/" + props.background);
     return (
         <div className="parallax-content">
-        <div className="parallax" style={{ backgroundImage: `url(${require('../../assets/test.png')})` }}>
+        <div className="parallax" style={{ backgroundImage: `url(${background})` }}>
             <div class="content">
             <span><h1>Purpose</h1></span>
             <span><p>Our mission is to provide a loving and safe environment for abandoned and neglected animals, offering them the care and attention they deserve. We strive to rescue, rehabilitate, and rehome animals, ensuring they have a chance at a better life. Through community outreach, we aim to raise awareness about animal welfare and promote responsible pet ownership. </p></span>

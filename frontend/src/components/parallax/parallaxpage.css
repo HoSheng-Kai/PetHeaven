@@ -46,7 +46,6 @@
     animation: fadeInFromTop 1.5s ease-out forwards;
 }
 
-/* Set delay for nth-child */
 .content span:nth-child(1) {
     animation-delay: 0.5s;
 }

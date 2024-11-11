@@ -6,7 +6,7 @@ function Home() {
     return (
       <div>
         <HeaderBar logo="logo.png" logo2="logo2.png"/>
-        <ParallaxPage/>
+        <ParallaxPage background= "home.png"/>
       </div>
     );
   }
