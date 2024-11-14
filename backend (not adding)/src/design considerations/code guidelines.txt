@@ -1,0 +1,5 @@
+I will be following the clippy tool which was released by the team that released rust.
+
+The following guides were used to complete this project:
+https://www.youtube.com/watch?v=Zy6x3rXHBPU&t=185s
+https://www.youtube.com/watch?v=_gMzg77Qjm0
