@@ -94,3 +94,13 @@
 .support-content span:nth-child(4) {
     animation-delay: 2s;
 }
+
+.subtext {
+    color: var(--gold);
+    text-align: center;
+    cursor: pointer;
+}
+
+.subdiv {
+    text-align: center;
+}

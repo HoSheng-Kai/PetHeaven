@@ -31,7 +31,7 @@ function Support() {
             <button onClick={() => setIsFormOpen(true)}>Donate</button>
           </div>
         </div>
-        <PopForm isOpen={isFormOpen} onClose={closeForm} fields="name creditcard amount"/>
+        <PopForm formType="Support" isOpen={isFormOpen} onClose={closeForm} fields="name creditcard amount"/>
       </div>
     );
   }

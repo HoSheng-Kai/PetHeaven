@@ -25,7 +25,7 @@ function Release() {
             <button onClick={() => setIsFormOpen(true)}>Pet info</button>
           </div>
         </div>
-        <PopForm isOpen={isFormOpen} onClose={closeForm} fields="petname pettype description"/>
+        <PopForm formType="Release" isOpen={isFormOpen} onClose={closeForm} fields="petname pettype description"/>
       </div>
     );
   }

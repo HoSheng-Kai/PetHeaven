@@ -1,6 +1,5 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-// import Home from './pages/home.js';
 
 import './headerbar.css';
 
@@ -25,8 +24,7 @@ function HeaderBar(props) {
   
               {/* Also highlight which page it is on, maybe through props? */}
               <nav className='flex-item-right'>
-                <HeaderButton variant='nav-item' text='Adopt'/>
-                {/* <HeaderButton variant='nav-item' text='Adopt' onclick={() => handleClick()} path='/adopt'/> */}
+                <HeaderButton variant='nav-item' text='Adopt' onClick={() => handleClick('/adopt')}/>
                 <HeaderButton variant='nav-item' text='Release' onClick={() => handleClick('/release')}/>
                 <HeaderButton variant='nav-item' text='Member' onClick={() => handleClick('/member')}/>
                 <HeaderButton variant='nav-item' text='Support us' onClick={() => handleClick('/support')} />

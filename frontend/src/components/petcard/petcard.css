@@ -1,0 +1,48 @@
+.card {
+    /* weird number to make the cards fit the display better */
+    width: 18%;
+    /* width: 16.4%; */
+    height: 250px;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 2%;
+}
+
+.pet-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: filter 0.3s ease;
+}
+
+.card::after {
+    content: attr(id);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--gold);
+    /* color: white; */
+    font-size: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center;
+}
+
+.pet-image:after {
+    filter: brightness(1);
+}
+
+.pet-image:hover {
+    filter: brightness(0.4);
+}
+
+/* Makes card remain dimmed when hovering over the words part */
+.card:hover .pet-image {
+    filter: brightness(0.4);
+}
+
+.card:hover::after {
+    opacity: 1;
+}

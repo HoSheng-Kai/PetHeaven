@@ -10,6 +10,8 @@ function Member() {
 
   // Add this for pop up forms, cant make classes
   const [isFormOpen, setIsFormOpen] = useState(false);
+  const [formFields, setFormFields] = useState("");
+
   const closeForm = () => {
     setIsFormOpen(false);
   };
@@ -29,10 +31,15 @@ function Member() {
               <li>Adoption Priority</li>
             </ul>
 
-            <button onClick={() => setIsFormOpen(true)}>Join Today!</button>
+            <div className='subdiv'>
+            <button onClick={() => {setIsFormOpen(true); setFormFields("name contact email")}}>Join Today!</button>
+            <sub class="subtext" onClick={() => {setIsFormOpen(true); setFormFields("name password")}}>Already have an account? Log in</sub>
+            </div>
+            
           </div>
         </div>
-        <PopForm isOpen={isFormOpen} onClose={closeForm} fields="name contact email"/>
+        <PopForm formType="Member" isOpen={isFormOpen} onClose={closeForm} fields={formFields}/>
+
       </div>
     );
   }

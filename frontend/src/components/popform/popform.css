@@ -85,6 +85,7 @@ body.modal-open {
     pointer-events: none;
 }
 
+/* only allows form to be touched */
 body.modal-open .popup-form-overlay {
     pointer-events: auto;
 }
