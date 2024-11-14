@@ -28,6 +28,7 @@ function HeaderBar(props) {
                 <HeaderButton variant='nav-item' text='Release' onClick={() => handleClick('/release')}/>
                 <HeaderButton variant='nav-item' text='Member' onClick={() => handleClick('/member')}/>
                 <HeaderButton variant='nav-item' text='Support us' onClick={() => handleClick('/support')} />
+                <HeaderButton variant='nav-item' text='Reviews' onClick={() => handleClick('/review')}/>
               </nav>
           </div>
   

@@ -9,14 +9,12 @@ import Support from './pages/support.js';
 import Member from './pages/member.js';
 import Release from './pages/release.js';
 import Adopt from './pages/adopt.js';
+import Review from './pages/review.js'
 
 // Data
 import petList from './data/pets.js';
 
 function Index() {
-
-  
-
   return (
     <Router>
       <Routes>
@@ -25,13 +23,13 @@ function Index() {
         <Route path="/member" element={<Member />} />
         <Route path="/release" element={<Release />} />
         <Route path="/adopt" element={<Adopt />} />
+        <Route path="/review" element={<Review />} />
       </Routes>
     </Router>
   );
 }
-// Might need to put it back in, once adopt is working
+
 localStorage.setItem('pets', JSON.stringify(petList));
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render( 
-  <Index />);
+root.render(<Index />);
